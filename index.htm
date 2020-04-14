@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+
+  <script src="js/gauge.min.js"></script>
+  <!-- <script src="//cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.5/radial/gauge.min.js"></script> -->
+
+</head>
+
+<body style="font-family:'IBM Plex Sans';color:#aaaaaa;">
+
+  <div style="background-color:#F2F5FA;padding:15px;text-align:center;">
+    <h1>Matt-K Home Stats</h1>
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+      <a href="#">Link 7</a>
+      <a href="#">Link 8</a>
+      <a href="#">Link 9</a>
+      <a href="#">Link 10</a>
+      <a href="#">Link 11</a>
+      <a href="#">Link 12</a>
+    </div>
+
+    <div class="main">
+      <h2>Muly Home</h2>
+      <p>Latest data and events from the house...</p>
+      <div><img src="images/temperature-graph1.png"></div>
+      <div>Cameras</div>
+      <div>Energy</div>
+    </div>
+
+    <div class="right">
+      <div class="main-right-graph">
+        <canvas data-type="radial-gauge" data-width="220" data-height="220" data-units="Watt Hours" data-min-value="0"
+          data-start-angle="180" data-ticks-angle="180" data-value-box="false" data-max-value="220"
+          data-major-ticks="60,50,40,30,20,10,-10,-20,-30,-40,-50,-60" data-minor-ticks="2" data-stroke-ticks="true"
+          data-highlights='[{"from": 160, "to": 220, "color": "rgba(230, 50, 50, .75)"},{"from": 0, "to": 40, "color": "rgba(0, 250, 0, .75)"}]'
+          data-color-plate="#fff" data-border-shadow-width="0" data-borders="false" data-needle-type="arrow"
+          data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true"
+          data-needle-circle-inner="true" data-animation-duration="1500" data-animation-rule="linear"></canvas>
+          <script src="js/gauge1.min.js"></script>
+          <a href="#" onclick="gauge.value=410">410</a>
+      </div>
+      <div class="main-right-graph"><img src="images/graph1.png"></div>
+
+      <div class="main-right-graph">
+      <a href="#" onclick="gaugePS.value=410">410</a>
+        
+        <canvas id="gauge-ps">
+        </canvas>
+        <script src="js/gauge2.min.js"></script>
+        <a href="#" onclick="gaugePS.value=830">830</a>
+        <!-- <script>
+          var gaugePS = new RadialGauge({
+            renderTo: 'gauge-ps',
+            width: 400,
+            height: 400,
+            units: 'PS',
+            minValue: 0,
+            maxValue: 1000,
+            majorTicks: [
+              '0',
+              '100',
+              '200',
+              '300',
+              '400',
+              '500',
+              '600',
+              '700',
+              '800',
+              '900',
+              '1000'
+            ],
+            minorTicks: 2,
+            ticksAngle: 270,
+            startAngle: 45,
+            strokeTicks: true,
+            highlights: [
+              { from: 457, to: 880, color: 'rgba(78,   78, 76, 0.5)' },
+              { from: 880, to: 1000, color: 'rgba(225, 7, 23, 0.75)' }
+            ],
+            valueInt: 1,
+            valueDec: 0,
+            colorPlate: "#fff",
+            colorMajorTicks: "#686868",
+            colorMinorTicks: "#686868",
+            colorTitle: "#000",
+            colorUnits: "#000",
+            colorNumbers: "#686868",
+            valueBox: true,
+            colorValueText: "#000",
+            colorValueBoxRect: "#fff",
+            colorValueBoxRectEnd: "#fff",
+            colorValueBoxBackground: "#fff",
+            colorValueBoxShadow: false,
+            colorValueTextShadow: false,
+            colorNeedleShadowUp: true,
+            colorNeedleShadowDown: false,
+            colorNeedle: "rgba(200, 50, 50, .75)",
+            colorNeedleEnd: "rgba(200, 50, 50, .75)",
+            colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+            colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+            borderShadowWidth: 0,
+            borders: true,
+            borderInnerWidth: 0,
+            borderMiddleWidth: 0,
+            borderOuterWidth: 5,
+            colorBorderOuter: "#fafafa",
+            colorBorderOuterEnd: "#cdcdcd",
+            needleType: "arrow",
+            needleWidth: 2,
+            needleCircleSize: 7,
+            needleCircleOuter: true,
+            needleCircleInner: false,
+            animationDuration: 1500,
+            animationRule: "dequint",
+            fontNumbers: "Verdana",
+            fontTitle: "Verdana",
+            fontUnits: "Verdana",
+            fontValue: "Led",
+            fontValueStyle: 'italic',
+            fontNumbersSize: 20,
+            fontNumbersStyle: 'italic',
+            fontNumbersWeight: 'bold',
+            fontTitleSize: 24,
+            fontUnitsSize: 22,
+            fontValueSize: 50,
+            animatedValue: true
+          });
+          gaugePS.draw();
+          gaugePS.value = "510";
+        </script> -->
+      </div>
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div style="background-color:#FFFFFF;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+</body>
